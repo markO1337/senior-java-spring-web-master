@@ -34,8 +34,8 @@ public class ImageServiceImpl implements ImageService {
     public void signAndStore(MultipartFile multipartFile) {
         validateImageContentType(multipartFile.getContentType());
         byte[] signedByteArray = signService.execute(multipartFile.getBytes());
-        String signedFileInBase64 = new String(Base64.encodeBase64(signedByteArray), StandardCharsets.UTF_8);
-        imageRepository.save(imageMapper.multiPartFileToImageEntity(multipartFile, signedFileInBase64));
+        String signedByteArrayInBase64 = new String(Base64.encodeBase64(signedByteArray), StandardCharsets.UTF_8);
+        imageRepository.save(imageMapper.multiPartFileToImageEntity(multipartFile, signedByteArrayInBase64));
     }
 
     @Override
