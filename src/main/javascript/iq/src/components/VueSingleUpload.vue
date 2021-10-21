@@ -21,7 +21,7 @@
                 uploadMultiple:false,
                 clickable:true,
                 addRemoveLinks:true,
-                url: '/api/file/post',
+                url: '/api/images',
             });
 
             this.myDropzone.on("success", (file: Dropzone.DropzoneFile, response: Object | string) => {

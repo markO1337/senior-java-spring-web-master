@@ -15,7 +15,7 @@
       <tbody>
       <tr v-for="image in images">
         <th scope="row">
-          <img :src="'/api/images/preview/' + image.id" :alt="image.name" height="50px">
+          <img :src="'/api/images/'+image.id+'/preview'" :alt="image.name" height="50px">
         </th>
         <td>{{image.id}}</td>
         <td>{{image.name}}</td>

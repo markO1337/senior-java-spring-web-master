@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "name": "test1.jpeg",
+    "mimeType": "image/jpeg",
+    "size": 2000000,
+    "digitalSign": "testSign"
+  },
+  {
+    "id": "2",
+    "name": "test2.jpeg",
+    "mimeType": "image/gif",
+    "size": 1000000,
+    "digitalSign": "testSign"
+  }
+]
